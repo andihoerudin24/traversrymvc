@@ -1,17 +1,25 @@
-<?php  
+<?php
+class Pages extends Controller
+{
 
-class Pages {
-    public function __construct() {
-        
-    }
-
-    public function index() {
-        echo 'Hello from the index method of the Pages controller!';
-    }
-
-
-    public function about($id)
+    public function __construct()
     {
-       echo "this is About" . $id;
+    }
+
+    public function index()
+    {
+        $data = [
+            'title' => 'welcome to the index page'
+        ];
+        $this->view('pages/index', $data);
+    }
+
+
+    public function about()
+    {
+        $data = [
+            'title' => 'about page'
+        ];
+        $this->view('pages/about', $data);
     }
 }
