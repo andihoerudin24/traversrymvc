@@ -11,8 +11,8 @@ class Pages extends Controller
     {
         $post = $this->postModel->getPosts();
         $data = [
-            'title' => 'welcome to the index page',
-            'posts' => $post
+            'title'       => 'welcome to the index page',
+            'description' => 'Simple social network for sharing your thoughts and ideas.',
         ];
         $this->view('pages/index', $data);
     }
@@ -21,7 +21,8 @@ class Pages extends Controller
     public function about()
     {
         $data = [
-            'title' => 'about page'
+            'title' => 'About Us',
+            'description' => 'App to share posts and ideas.',
         ];
         $this->view('pages/about', $data);
     }

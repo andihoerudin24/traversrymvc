@@ -14,4 +14,7 @@
   //Site Name
   define('SITENAME', 'TraversryMVC');
 
+  //App Version
+  define('APPVERSION', '1.0.0');
+
 ?>
