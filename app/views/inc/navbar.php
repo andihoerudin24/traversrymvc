@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand" href="<?php echo URLROOT; ?>"><?php echo SITENAME; ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,7 +15,7 @@
         </li>
       </ul>
 
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="<?php echo URLROOT; ?>/users/register">Register</a>
         </li>
@@ -24,8 +24,6 @@
         </li>
     </ul>
 
-
-
-    </div>
+  </div>
   </div>
 </nav>
